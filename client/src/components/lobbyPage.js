@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../assets/css/lobbyPage.css'
 import axios from 'axios';
 import GameInfoModal from './gameInfoModal';
-import Leaderboard from './leaderboard';
+// import Leaderboard from './leaderboard';
 import DisplayMessages from './errorMessage';
 
 class LobbyPage extends Component {
@@ -183,7 +183,7 @@ class LobbyPage extends Component {
                                             <div className='input-field '>
                                                 <select name='gameType'>
                                                     <option value='webcam'>Webcam</option>
-                                                    <option value='deal52'>Deal 52</option>
+                                                    {/* <option value='deal52'>Deal 52</option> */}
                                                 </select>
                                             </div>
                                         </div>
@@ -191,8 +191,8 @@ class LobbyPage extends Component {
                                             <div className='input-field'>
                                                 <select name='maxPlayers'>
                                                     <option value='2'>2 Players</option>
-                                                    <option value='3'>3 Players</option>
-                                                    <option value='4'>4 Players</option>
+                                                    {/* <option value='3'>3 Players</option>
+                                                    <option value='4'>4 Players</option> */}
                                                 </select>
                                             </div>
                                         </div>
@@ -228,7 +228,7 @@ class LobbyPage extends Component {
                         </div>
                     </div>
                 </div>
-                <Leaderboard data={leaderboardData} />
+                {/* <Leaderboard data={leaderboardData} /> */}
                 <GameInfoModal fromLobby={true} gameType={gameType} roomKey={roomKeyFromServer} display={displayModal} />
             </div >
         )
