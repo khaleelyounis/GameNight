@@ -1,12 +1,13 @@
 .mainApp {
     position: relative;
     background-repeat: repeat;
-    background-image: url('../images/background-tile.png');
+    /* background-image: url('../images/background-tile.png'); */
     width: 100%;
 }
 
 .gradientStyle {
-    background: linear-gradient(180deg, rgba(255,238,42,.3), rgba(255,119,0,.4));
+    /* background: linear-gradient(180deg, rgba(255,238,42,.3), rgba(255,119,0,.4)); */
+    /* background: linear-gradient(180deg, rgba(102, 179, 238, 0.3), rgba(216, 203, 191, 0.4)); */
     height: 100%;
     width: 100%;
 }

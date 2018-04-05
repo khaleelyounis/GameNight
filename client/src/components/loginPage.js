@@ -61,7 +61,7 @@ class LoginPage extends Component {
                 <div className='signInArea contentBorder z-depth-5'>
                     <div className='row'>
                         <div className="col s12 homeTitle center-align">
-                            <h2 className="signInText">Live Face Off</h2>
+                            <h2 className="signInText">GameNight</h2>
                         </div>
                     </div>
                     <div className="row">
