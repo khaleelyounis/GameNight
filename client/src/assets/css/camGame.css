@@ -1,0 +1,165 @@
+.scoreInput{
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.score{
+    height: 100%;
+} 
+
+.chatCam{
+    height: 60vh;
+}
+
+#camChat{
+    padding: 0;
+    height: 60vh;
+}
+.webpage{
+    height: 91.5vh;
+    margin: 0;
+}
+
+#teamOneScore, #teamTwoScore{
+    text-align: center;
+}
+
+.scoreInfo{
+    height: 30%;
+}
+
+#scoreRow{
+    height: 89vh;
+    margin: 0;
+}
+
+#cardContainer{
+    padding: 5%;
+    height: 60%;
+}
+
+.teamText{
+    font-size: 18px;
+}
+
+.camGameBtn{
+    font-size: 12px;
+    padding: 0 1.5rem;
+}
+
+#infoBtn{
+    padding-right: 0;
+}
+
+#endGameBtn{
+    padding-left: 0;
+}
+
+/* Media Queries */
+@media only screen and (min-height: 100px) and (max-height: 500px) {
+    .webpage{
+        height: 115vh;
+    }
+    .lituation-chat {
+        height: 45%;
+    }
+ 
+}
+
+@media only screen and (min-height: 501px) and  (max-height: 600px) {
+    .webpage{
+        height: 105vh;
+    }
+    .lituation-chat {
+        height: 45%;
+    }
+ 
+}
+
+@media only screen and (min-height: 600px) and (max-height: 659px) {
+    .webpage{
+        height: 100vh;
+    }
+    .lituation-chat {
+        height: 90%;
+    }
+ 
+}
+
+@media only screen and (min-height: 660px) and (max-height: 768px) {
+    .webpage{
+        height: 100vh;
+    }
+    #camChat{
+        height: 50vh;
+    }
+    .lituation-chat {
+        height: 100%;
+    }
+ 
+} 
+
+@media only screen and (min-height: 768px) and (max-height: 847px) {
+    .webpage{
+        height: 92vh;
+    }
+    #camChat{
+        height: 60vh;
+    }
+    .container{
+        width: 75%;
+    }
+    .lituation-chat {
+        height: 75%;
+    }
+}
+
+@media only screen and (min-height: 848px) and (max-height: 909px) {
+    .webpage{
+        height: 92.7vh;
+    }
+    .container{
+        width: 75%;
+    }
+}
+
+@media only screen and (min-height: 910px) {
+    .webpage{
+        height: 93.1vh;
+    }
+    .container{
+        width: 75%;
+    }
+}
+
+@media only screen and (min-height: 950px) {
+    .webpage{
+        height: 93.3vh;
+    }
+    #camChat{
+        height: 65vh;
+    }
+    .container{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   
+    .container{
+        width: 85%;
+    }
+} 
+
+@media only screen and (max-width: 988px) {
+   
+    .container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    div#fullScreen > div > div > div > div.OT_subscriber{
+        width: 60vw !important; 
+    }
+}

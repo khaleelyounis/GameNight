@@ -1,0 +1,77 @@
+.gameInfoModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.gameInfoContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: text;
+    background-color: whitesmoke;
+    margin: 8% auto;
+    padding: 20px 30px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+    width: 40%;
+    height: 50%;
+    font-size: 2vmin;
+}
+
+.roomKeyStyle {
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.webcamModalSize {
+    height: 62%;
+    width: 42%;
+}
+
+.dealModalSize {
+    height: 80%;
+    width: 55%;
+}
+
+@media screen and (min-width: 920px) {
+    .dealModalSize {
+        height: 77%;
+        width: 52%;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .dealModalSize {
+        height: 74%;
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .dealModalSize {
+        height: 68%;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .webcamModalSize {
+        height: 58%;
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .webcamModalSize {
+        height: 58%;
+        width: 35%;
+    }
+}

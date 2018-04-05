@@ -1,0 +1,58 @@
+.waitingGameModal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#waitingModalContent{
+    height: 58%;
+    width: 74%;
+    top: 36%;
+    left: 25%;
+}
+
+#waitingText{
+    color: rgba(0,181,161,1); 
+}
+
+.waitingModalContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: text;
+    background-color: ghostwhite;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+    width: 40%;
+    height: 75%;
+    font-size: 2.4vmin;
+}
+
+@media screen and (min-width: 930px) {
+    .waitingModalContent {
+        height: 75%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .waitingModalContent {
+        height: 75%;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 994px) {
+    #waitingModalContent{
+        left: 0;
+        width: 100%;
+        top: 34%;
+    }
+}

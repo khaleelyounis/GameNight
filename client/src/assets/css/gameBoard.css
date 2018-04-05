@@ -1,0 +1,131 @@
+
+.gameArea{
+    height: 100%;
+    padding: 0;
+}
+
+.gameCards{
+    margin: 0;
+}
+.cardsArea{
+    height:61%;
+    margin-bottom: 0;
+}
+.camChat{
+    height: 85%;
+}
+
+.playerHand{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+.fullHand{
+    height: 100%;
+    max-width: 28vh;
+}
+
+.playerCard0{
+    width: 98%;
+    cursor: pointer;
+    border-radius: 1.5%;
+    margin: .5%;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.playerCard1,
+.playerCard2,
+.playerCard3,
+.playerCard4{
+    width: 98%;
+    cursor: pointer;
+    border-radius: 1.5%;
+    margin: .5%;
+    background-repeat:no-repeat;
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+} 
+
+.gameTotals{
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.gameMessage{
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0;
+}
+
+.bottomCard{
+    height: 100px;
+    border-radius: 10px;
+    background-color:ghostwhite;
+}
+
+.bottomCardContainer{
+    height: 100%;
+}
+
+/* @media only screen and (min-height: 768px) and (max-height: 847px) {
+    .bottomInfo{
+        margin: 4.5% 0 0 0;
+    }
+} */
+
+@media only screen and (max-width: 1300px) {
+    .cardsArea{
+        padding-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 999px) {
+    .gameMessage{
+        font-size: 16px;
+    }
+    .gameTotals{
+        font-size: 13.5px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1323px) {
+    .gameMessage{
+        font-size: 16px;
+    }
+    .gameTotals{
+        font-size: 13.5px;
+    }
+}
+
+@media only screen and (min-width: 1325px) {
+    .gameMessage{
+        font-size: 16px;
+    }
+    .gameTotals{
+        font-size: 13.5px;
+    }
+}
+
+@media only screen and (min-height: 560px) {
+    .bottomCard {
+        height: 80px;
+    }
+}
+
+@media only screen and (min-height: 460px) {
+    .bottomCard {
+        height: 80px;
+        margin-top: 39px;
+    }
+}

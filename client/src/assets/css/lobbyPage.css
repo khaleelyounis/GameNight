@@ -1,0 +1,144 @@
+.fullbox {
+    background-color: ghostwhite;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lobbyText{
+    color: rgb(255, 123, 0);
+}
+
+.profileCard, .createGame {
+    margin-top: 3%;
+    height: 300px
+}
+
+.topCards{
+    margin-top: 3%;
+}
+
+#playerCard{
+    padding-left: 0;
+}
+
+#joinCard{
+    padding-right: 0;
+}
+
+#createCard{
+    padding:0;
+}
+.profileCard {
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileInfo {
+    list-style: none;
+}
+
+.createGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBorder {
+    border-radius: 25px;
+}
+
+.joinTitle {
+    margin-top: -25px;
+}
+
+.tableMargin {
+    margin-bottom: 1.5rem;
+}
+
+.lobbyHeaders {
+    margin-top: 1.8rem;
+    color: rgb(255, 123, 0);
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.leaderBoard, .createGame, .playerCard{
+    background-color: ghostwhite;
+}
+
+.leaderBoard{
+    margin-bottom: 2%;
+    height: 660px;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.dropdown span:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.userInfo {
+    margin: 0 auto;
+}
+
+::placeholder {
+    color:black;
+}
+
+.userIcon {
+    font-size: 50px;
+    color: rgba(0,181,161,1);
+}
+
+.lobbyUsername {
+    margin-top: 5%;
+    color: rgb(255, 123, 0);
+}
+
+.userIconPos {
+    margin-bottom: 15px;
+}
+
+.googleFB {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 993px) {
+    .row .col.offset-l1 {
+        margin-left: 4.3333333333%;
+    }
+}
+
+@media only screen and (min-width: 993px){
+    .row .col.l8 {
+        width: 70.6666666667%;
+    }
+}
+

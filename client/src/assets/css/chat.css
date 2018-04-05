@@ -1,0 +1,62 @@
+
+.lituation-chat{
+    width: 100%;
+    height: 94%;
+    border-radius: 25px 25px 0px 0px;
+    box-sizing: border-box;
+}
+
+.form-chat{
+    height: 100%;
+}
+
+#chat-window{
+    padding: 3%;
+    height: 90%;
+    overflow: auto;
+    word-wrap: break-word;
+    background: ghostwhite;
+    text-align: left;
+    border-radius: 25px 25px 0px 0px;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #232320;
+}
+
+#message{
+    padding: 3%;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    margin: 0;
+}
+
+.chatBtn{
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+}
+
+input::-webkit-input-placeholder, 
+handle::-webkit-input-placeholder {
+    font-family: 'Work Sans', sans-serif;
+    color: darkgrey;
+}

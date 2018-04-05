@@ -1,0 +1,22 @@
+{
+  "name": "c12.17_familygame",
+  "version": "1.0.0",
+  "description": "Family Game in production, created by Khaleel Younis, Shawn Levin, Paul Lee, and Crystal Navarro.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run dev --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Learning-Fuze/c12.17_familygame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Learning-Fuze/c12.17_familygame/issues"
+  },
+  "homepage": "https://github.com/Learning-Fuze/c12.17_familygame#readme"
+}

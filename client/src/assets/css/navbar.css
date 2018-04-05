@@ -1,0 +1,47 @@
+.navbarItem {
+    padding: 0vh 1vh;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.navbarUl {
+    height: 100%;
+}
+
+.navbarLi {
+    height: 100%;
+}
+
+a.brand-logo.left {
+    height: 100%;
+    margin-left: 4.5%;
+}
+
+.nav-wrapper {
+    height: 100%;
+}
+
+.navImg {
+    position: absolute;
+    top: 10%;
+    left: -26%;
+    width: 26%;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    a.brand-logo.left {
+        margin-left: 3.5%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    a.brand-logo.left {
+        margin-left: 3.2%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    a.brand-logo.left {
+        margin-left: 3%;
+    }
+}

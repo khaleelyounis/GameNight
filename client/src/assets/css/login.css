@@ -1,0 +1,100 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    overflow-y:auto;
+}
+
+.signInArea {
+    border: 1px solid black;
+    width: 60%;
+    margin: 3% auto;
+    background-color: ghostwhite;
+}
+
+.top {
+    height: 30%;
+    width: 100%;
+}
+
+#titleH1 {
+    font-size:65px;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+.inputFieldCentering {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.loginContainer {
+    height: 91.5vh;
+}
+
+.logInBtn {
+    margin-left: 10px;
+    width: 35%;
+}
+
+.signInBtn {
+    margin-left: 10px;
+}
+
+.facebookBtn {
+    margin-left:1%;
+}
+
+.googleBtn {
+    margin-left: 1%;
+}
+
+.signInText {
+    color: rgb(255, 123, 0); 
+
+}
+
+/* Media Queries */
+
+
+@media only screen and (min-height: 300px) and (max-height: 559px) {
+    .loginContainer{
+        height: 134vh;
+    }
+}
+
+@media only screen and (min-height: 560px) and (max-height: 649px) {
+    .loginContainer{
+        height: 104vh;
+    }
+}
+
+@media only screen and (min-height: 650px) and (max-height: 767px) {
+    .loginContainer{
+        height: 90.9vh;
+    }
+} 
+
+@media only screen and (min-height: 768px) and (max-height: 847px) {
+    .loginContainer {
+        height: 92vh;
+    }
+}
+
+@media only screen and (min-height: 848px) and (max-height: 909px) {
+    .loginContainer {
+        height: 92.7vh;
+    }
+}
+
+@media only screen and (min-height: 910px) {
+    .loginContainer {
+        height: 93.1vh;
+    }
+}
+
+@media only screen and (min-height: 950px) {
+    .loginContainer {
+        height: 93.3vh;
+    }
+}

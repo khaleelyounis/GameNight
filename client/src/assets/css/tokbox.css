@@ -1,0 +1,15 @@
+.error {
+    color: red;
+}
+
+.OT_subscriber {  
+    float: left; 
+    margin-left: 1em;
+    margin-left: 2%;
+} 
+
+div.OTPublisherContainer {
+    float: left;
+    position: absolute; 
+    left: 75%;
+}

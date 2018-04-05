@@ -1,0 +1,49 @@
+.imageRow > .imageContainer > .aboutUsImage {
+    padding: 0;
+}
+
+#aboutUsImage {
+    padding: 0;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+
+.aboutUsNames {
+    font-weight: 600;
+    font-size: 3vmin;
+    color: rgb(255, 123, 0);
+   
+}
+
+div.card-content.cardBox {
+    padding-bottom: 0;
+}
+
+.frontAndBack {
+    font-size: 5vmin;
+}
+
+span {
+    font-weight: 500;
+}
+
+.contactIcon {
+    font-size: 50px;
+    padding: 0 10px;
+    color: darkcyan;
+}
+
+div.icons.center.center-align.col.s12 {
+    padding: 1% 0;
+}
+
+.frontEnd, .backEnd, .aboutTitle{
+    color: rgba(0,181,161,1); 
+    text-shadow: 2px 2px 4px rgb(128, 66, 9); 
+}
+
+.figCaptionText{
+    color: rgb(255, 123, 0);
+    padding-top: 1%; 
+    font-size: 2vmin;
+}
