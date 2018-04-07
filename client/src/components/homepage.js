@@ -9,11 +9,11 @@ class Homepage extends Component {
     //switches btn links depending on whether user is logged in or not.
     switchLinks() {
         if (this.props.auth) {
-            return <Link id='toLobby' className='btn teal accent-4 waves-effect waves-light btn-large' to='/lobby' style={{ margin: '2%' }}>Go To Lobby</Link>
+            return <Link id='toLobby' className='btn grey darken-1 waves-effect waves-light btn-large' to='/lobby' style={{ margin: '2%' }}>Go To Lobby</Link>
         } else {
             return [
-                <Link key='0' id='loginHomepage' className='btn teal accent-4 waves-effect waves-light btn-large' to='/login' style={{ margin: '2%' }}>Login</Link>,
-                <Link key='1' id='signUpAcc' className='btn orange accent-4 waves-effect waves-light btn-large' to='/register' style={{ margin: '2%' }} >Sign Up</Link>
+                <Link key='0' id='loginHomepage' className='btn grey darken-1 waves-effect waves-light btn-large' to='/login' style={{ margin: '2%' }}>Login</Link>,
+                <Link key='1' id='signUpAcc' className='btn blue lighten-1 waves-effect waves-light btn-large' to='/register' style={{ margin: '2%' }} >Sign Up</Link>
             ]
         }
     }

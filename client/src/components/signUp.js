@@ -57,7 +57,7 @@ class SignUp extends Component {
                             <div className="row rowlines">
                                 <div className='col s12 center-align'>
                                     <Link className='logInBtn waves-effect waves-light btn red accent-4' to='/login'>Back</Link>
-                                    <button id='submitButton' type="submit" className='signUpBtn waves-effect waves-light btn teal accent-4'>Sign Up</button>
+                                    <button id='submitButton' type="submit" className='signUpBtn waves-effect waves-light btn grey darken-1'>Sign Up</button>
                                 </div>
                             </div>
                         </form>

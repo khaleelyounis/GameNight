@@ -8,7 +8,7 @@
 }
 
 .lobbyText{
-    color: rgb(255, 123, 0);
+    color: #0d47a1 ;
 }
 
 .profileCard, .createGame {
@@ -62,7 +62,7 @@
 
 .lobbyHeaders {
     margin-top: 1.8rem;
-    color: rgb(255, 123, 0);
+    color: #0d47a1 ;
 }
 
 .dropdownContent {
@@ -114,12 +114,12 @@
 
 .userIcon {
     font-size: 50px;
-    color: rgba(0,181,161,1);
+    color: #42a5f5;
 }
 
 .lobbyUsername {
     margin-top: 5%;
-    color: rgb(255, 123, 0);
+    color: #0d47a1 ;
 }
 
 .userIconPos {

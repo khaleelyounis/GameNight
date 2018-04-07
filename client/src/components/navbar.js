@@ -93,7 +93,7 @@ class Navbar extends Component {
     render() {
         console.log(this.props);
         return (
-            <nav className='teal accent-4 navBar'>
+            <nav className='grey darken-1 navBar'>
                 {this.renderLinks()}
             </nav>
         )

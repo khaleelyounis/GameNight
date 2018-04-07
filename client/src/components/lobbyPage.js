@@ -198,7 +198,7 @@ class LobbyPage extends Component {
                                         </div>
                                         <div className='col s12'>
                                             <div className='col s12'>
-                                                <button id='startButton' className='btn teal accent-4 waves-effect waves-light' type="submit">Start</button>
+                                                <button id='startButton' className='btn grey darken-1 waves-effect waves-light' type="submit">Start</button>
                                             </div>
                                         </div>
                                     </form>
@@ -220,7 +220,7 @@ class LobbyPage extends Component {
                                     </div>
                                     <div className='col s12'>
                                         <div className='col s12'>
-                                            <button id='joinButton' className='btn orange accent-4 waves-effect waves-light' type="submit" style={{ marginTop: '23px' }}>Join</button>
+                                            <button id='joinButton' className='btn blue lighten-1 waves-effect waves-light' type="submit" style={{ marginTop: '23px' }}>Join</button>
                                         </div>
                                     </div>
                                 </form>

@@ -278,8 +278,8 @@ class GameBoard extends Component {
                                 <div className="col s3 l3 center-align">
                                     <button onClick={this.discardCardBtn} className="waves-effect waves-light btn red accent-4 center-align" type="submit">Discard</button>
                                 </div>
-                                <div className="col s3 l3 center-align">
-                                    <button onClick={this.displayInfo} className="waves-effect waves-light btn teal accent-4" type="button">Info</button>
+                                <div className="col s3 l3 center-align">grey darken-1
+                                    <button onClick={this.displayInfo} className="waves-effect waves-light btn grey darken-1" type="button">Info</button>
                                 </div>
                                 <div className="col s3 l3">
                                     <h6 className="right-align gameTotals">Total Points : {player1Total}</h6>
