@@ -9,11 +9,11 @@ class Homepage extends Component {
     //switches btn links depending on whether user is logged in or not.
     switchLinks() {
         if (this.props.auth) {
-            return <Link id='toLobby' className='btn teal accent-4 waves-effect waves-light btn-large' to='/lobby' style={{ margin: '2%' }}>Go To Lobby</Link>
+            return <Link id='toLobby' className='btn grey darken-1 waves-effect waves-light btn-large' to='/lobby' style={{ margin: '2%' }}>Go To Lobby</Link>
         } else {
             return [
-                <Link key='0' id='loginHomepage' className='btn teal accent-4 waves-effect waves-light btn-large' to='/login' style={{ margin: '2%' }}>Login</Link>,
-                <Link key='1' id='signUpAcc' className='btn orange accent-4 waves-effect waves-light btn-large' to='/register' style={{ margin: '2%' }} >Sign Up</Link>
+                <Link key='0' id='loginHomepage' className='btn grey darken-1 waves-effect waves-light btn-large' to='/login' style={{ margin: '2%' }}>Login</Link>,
+                <Link key='1' id='signUpAcc' className='btn blue lighten-1 waves-effect waves-light btn-large' to='/register' style={{ margin: '2%' }} >Sign Up</Link>
             ]
         }
     }
@@ -24,7 +24,7 @@ class Homepage extends Component {
                 <div className='row'>
                     <div className='landing col l6 s12'>
                         <div className='mainDiv'>
-                            <h1 className="gameTitle home center center-align">Live Face Off</h1>
+                            <h1 className="gameTitle home center center-align">Game Night</h1>
                         </div>
                     </div>
                     <div className='col l6 s12'>
@@ -32,8 +32,8 @@ class Homepage extends Component {
                             <div className="col s12">
                                 <div className="card contentBorder">
                                     <div className="card-content">
-                                        <h3 className='title center center-align'>What is Live Face Off?</h3>
-                                        <p className="center center-align paragraphTopHomePage">Want to reconnect with a family member overseas? Need a place to hangout with buddies after a long day of work? Live Face Off is a platform where you can easily spend some time with someone close and catch up. Our mission is to create an interface that can be used by just about anyone, while bringing together core technologies that allow for easy communication and fun.</p>
+                                        <h3 className='title center center-align'>What is GameNight?</h3>
+                                        <p className="center center-align paragraphTopHomePage">Want to reconnect with a family member overseas? Need a place to hangout with buddies after a long day of work? GameNight is a platform where you can easily spend some time with someone close and catch up. Our mission is to create an interface that can be used by just about anyone, while bringing together core technologies that allow for easy communication and fun.</p>
                                         <div className='fam row'>
                                             <div className="col s12">
                                                 <img id="fam" src={fam} />
@@ -52,7 +52,7 @@ class Homepage extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='row'>
+                {/* <div className='row'>
                     <div className='col s6 offset-s3'>
                         <h1 className="feature center center-align">Features</h1>
                     </div>
@@ -106,7 +106,7 @@ class Homepage extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }

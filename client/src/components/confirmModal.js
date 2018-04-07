@@ -12,10 +12,10 @@ class ConfirmModal extends Component {
     }
 
     switchLinks() {
-        if(this.props.route === 'signOut'){
-            return <a onClick={this.props.signOut} className='btn teal accent-4 waves-effect waves-light'>Log out</a>
+        if (this.props.route === 'signOut') {
+            return <a onClick={this.props.signOut} className='btn grey lighten-1 waves-effect waves-light'>Log out</a>
         } else {
-            return <Link to={`/${this.props.route}`} onClick={this.closeModalAndLeaveRoom.bind(this)} className='btn teal accent-4 waves-effect waves-light'>Yes</Link>
+            return <Link to={`/${this.props.route}`} onClick={this.closeModalAndLeaveRoom.bind(this)} className='btn grey lighten-1 waves-effect waves-light'>Yes</Link>
         }
     }
 
@@ -31,7 +31,7 @@ class ConfirmModal extends Component {
                     <div>
                         <h3>Are you sure you want to leave?</h3>
                         {this.switchLinks()}
-                        <button style={{marginLeft: '15px'}} className='btn red accent-4 waves-effect waves-light' onClick={this.props.close}>No</button>
+                        <button style={{ marginLeft: '15px' }} className='btn red accent-4 waves-effect waves-light' onClick={this.props.close}>No</button>
                     </div>
                 </div>
             </div>
@@ -39,4 +39,4 @@ class ConfirmModal extends Component {
     }
 }
 
-export default connect(null, { leaveRoom: leaveRoom})(ConfirmModal);
+export default connect(null, { leaveRoom: leaveRoom })(ConfirmModal);

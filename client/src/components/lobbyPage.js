@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../assets/css/lobbyPage.css'
 import axios from 'axios';
 import GameInfoModal from './gameInfoModal';
-import Leaderboard from './leaderboard';
+// import Leaderboard from './leaderboard';
 import DisplayMessages from './errorMessage';
 
 class LobbyPage extends Component {
@@ -183,7 +183,7 @@ class LobbyPage extends Component {
                                             <div className='input-field '>
                                                 <select name='gameType'>
                                                     <option value='webcam'>Webcam</option>
-                                                    <option value='deal52'>Deal 52</option>
+                                                    {/* <option value='deal52'>Deal 52</option> */}
                                                 </select>
                                             </div>
                                         </div>
@@ -191,14 +191,14 @@ class LobbyPage extends Component {
                                             <div className='input-field'>
                                                 <select name='maxPlayers'>
                                                     <option value='2'>2 Players</option>
-                                                    <option value='3'>3 Players</option>
-                                                    <option value='4'>4 Players</option>
+                                                    {/* <option value='3'>3 Players</option>
+                                                    <option value='4'>4 Players</option> */}
                                                 </select>
                                             </div>
                                         </div>
                                         <div className='col s12'>
                                             <div className='col s12'>
-                                                <button id='startButton' className='btn teal accent-4 waves-effect waves-light' type="submit">Start</button>
+                                                <button id='startButton' className='btn grey darken-1 waves-effect waves-light' type="submit">Start</button>
                                             </div>
                                         </div>
                                     </form>
@@ -220,7 +220,7 @@ class LobbyPage extends Component {
                                     </div>
                                     <div className='col s12'>
                                         <div className='col s12'>
-                                            <button id='joinButton' className='btn orange accent-4 waves-effect waves-light' type="submit" style={{ marginTop: '23px' }}>Join</button>
+                                            <button id='joinButton' className='btn blue lighten-1 waves-effect waves-light' type="submit" style={{ marginTop: '23px' }}>Join</button>
                                         </div>
                                     </div>
                                 </form>
@@ -228,7 +228,7 @@ class LobbyPage extends Component {
                         </div>
                     </div>
                 </div>
-                <Leaderboard data={leaderboardData} />
+                {/* <Leaderboard data={leaderboardData} /> */}
                 <GameInfoModal fromLobby={true} gameType={gameType} roomKey={roomKeyFromServer} display={displayModal} />
             </div >
         )

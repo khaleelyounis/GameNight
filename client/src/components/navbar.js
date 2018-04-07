@@ -34,33 +34,33 @@ class Navbar extends Component {
 
     //switches nav links depending if user is logged in or not.
     renderLinks() {
-        if(this.props.auth === true && this.props.inRoom === true){
+        if (this.props.auth === true && this.props.inRoom === true) {
             const { displayModal, route } = this.state;
             return (
                 <div className="nav-wrapper">
-                    <a onClick={()=> {this.setDisplayModal('')}} className='brand-logo left' style={{cursor: 'pointer'}}><span>Live Face Off</span><img className="navImg" src={LFOlogoSM} /></a>
+                    <a onClick={() => { this.setDisplayModal('') }} className='brand-logo left' style={{ cursor: 'pointer' }}><span>GameNight</span><img className="navImg" src={LFOlogoSM} /></a>
                     <ul className="right navbarUl">
+                        {/* <li className="navbarLi">
+                            <a onClick={() => { this.setDisplayModal('About') }} className="navbarItem">About</a>
+                        </li> */}
                         <li className="navbarLi">
-                            <a onClick={()=> {this.setDisplayModal('About')}} className="navbarItem">About</a>
+                            <a onClick={() => { this.setDisplayModal('Lobby') }} className="navbarItem">Lobby</a>
                         </li>
                         <li className="navbarLi">
-                            <a onClick={()=> {this.setDisplayModal('Lobby')}} className="navbarItem">Lobby</a>
-                        </li>
-                        <li className="navbarLi">
-                            <a onClick={()=> {this.setDisplayModal('signOut')}} className="navbarItem">Logout</a>
+                            <a onClick={() => { this.setDisplayModal('signOut') }} className="navbarItem">Logout</a>
                         </li>
                     </ul>
-                    <ConfirmModal display={displayModal} route={route} close={this.closeConfirmModal} signOut={this.props.signOut}/>
+                    <ConfirmModal display={displayModal} route={route} close={this.closeConfirmModal} signOut={this.props.signOut} />
                 </div>
             )
-        } else if (this.props.auth === true && this.props.inRoom === false){
+        } else if (this.props.auth === true && this.props.inRoom === false) {
             return (
                 <div className="nav-wrapper">
-                    <Link to='/' className='brand-logo left'><span>Live Face Off</span><img className="navImg" src={LFOlogoSM} /></Link>
+                    <Link to='/' className='brand-logo left'><span>GameNight</span><img className="navImg" src={LFOlogoSM} /></Link>
                     <ul className="right navbarUl">
-                        <li className="navbarLi">
+                        {/* <li className="navbarLi">
                             <Link to='/about' className="navbarItem">About</Link>
-                        </li>
+                        </li> */}
                         <li className="navbarLi">
                             <Link to='/lobby' className="navbarItem">Lobby</Link>
                         </li>
@@ -73,11 +73,11 @@ class Navbar extends Component {
         } else {
             return (
                 <div className="nav-wrapper">
-                    <Link to='/' className='brand-logo left'><span>Live Face Off</span><img className="navImg" src={LFOlogoSM} /></Link>
+                    <Link to='/' className='brand-logo left'><span>GameNight</span><img className="navImg" src={LFOlogoSM} /></Link>
                     <ul className="right navbarUl">
-                        <li className="navbarLi">
+                        {/* <li className="navbarLi">
                             <Link to='/about' className="navbarItem">About</Link>
-                        </li>
+                        </li> */}
                         <li className="navbarLi">
                             <Link to='/register' className="navbarItem">Sign Up</Link>
                         </li>
@@ -93,7 +93,7 @@ class Navbar extends Component {
     render() {
         console.log(this.props);
         return (
-            <nav className='teal accent-4 navBar'>
+            <nav className='grey darken-1 navBar'>
                 {this.renderLinks()}
             </nav>
         )

@@ -108,7 +108,7 @@ class Chat extends Component {
                         <div id="feedback"></div>
                     </div>
                     <input value={this.state.message} onChange={this.handleInputChange.bind(this)} id="message" type="text" placeholder="Type Message" />
-                    <button className="chatBtn waves-effect waves-light btn teal accent-4" onClick={this.sendMessage.bind(this)} id="send">Send</button>
+                    <button className="chatBtn waves-effect waves-light btn grey darken-1" onClick={this.sendMessage.bind(this)} id="send">Send</button>
                 </form>
             </div>
         )

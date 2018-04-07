@@ -15,7 +15,7 @@ class CamGameWinModal extends Component {
                         <h3>{this.props.gameResult}</h3>
                         <h4>Final Score</h4>
                         <h4>{this.props.teamOneScore} - {this.props.teamTwoScore}</h4>
-                        <button className='btn teal accent-4 waves-effect waves-light' onClick={this.props.close}>Reset</button>
+                        <button className='btn grey darken-1 waves-effect waves-light' onClick={this.props.close}>Reset</button>
                     </div>
                 </div>
             </div>

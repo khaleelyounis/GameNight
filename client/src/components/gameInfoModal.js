@@ -16,9 +16,9 @@ class GameInfoModal extends Component {
         let body = document.getElementsByTagName('BODY')[0];
         body.style.overflow = 'visible';
         if (this.props.fromLobby === true) {
-            return <Link to={redirect} className='btn teal accent-4 waves-effect waves-light'>Join Room</Link>
+            return <Link to={redirect} className='btn grey darken-1 waves-effect waves-light'>Join Room</Link>
         } else {
-            return <button className='btn teal accent-4 waves-effect waves-light' onClick={this.props.close}>Close</button>
+            return <button className='btn grey darken-1 waves-effect waves-light' onClick={this.props.close}>Close</button>
         }
     }
 

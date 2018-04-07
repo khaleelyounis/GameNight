@@ -4,11 +4,11 @@
 }
 
 h3.title.center.center-align {
-    color: rgb(255, 123, 0);
+    color: #0d47a1 ;
 }
 
 h5.center.center-align{
-    color: rgb(255, 123, 0);
+    color: #0d47a1 ;
 }
 
 .titleLine{
@@ -18,12 +18,12 @@ h5.center.center-align{
 .gameTitle{
     font-family: crewniverse;
     font-size: 20vmin;
-    color: rgba(0,181,161,1);
+    color: #42a5f5  ;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    text-shadow: 5px 5px 10px rgb(182, 88, 0);
+    text-shadow: 5px 5px 10px #0d47a1 ;
 }
 
 @keyframes floating {
@@ -38,8 +38,8 @@ h5.center.center-align{
 
 .feature {
     font-size: 10vmin;
-    color: rgba(0,181,161,1); 
-    text-shadow: 4px 4px 6px rgb(128, 66, 9); 
+    color: #42a5f5; 
+    text-shadow: 4px 4px 6px #0d47a1 ; 
    
 }
 
