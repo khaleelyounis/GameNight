@@ -44,6 +44,8 @@ function createARoom() {
 }
 
 //Creates a room key with a crypto hash and is given to the user to allow people to join their room.
+
+//Need to modify for user to create their own key and use in url of the lobby.
 function createHash() {
     var current_date = (new Date()).valueOf().toString();
     var random = Math.random().toString();
@@ -54,7 +56,10 @@ function createHash() {
 
 //This route generates a room/hash and creates the lobby in the database, then sends the information back to the user
 router.post('/room', ensureAuthenticated, function (req, res) {
-    let { gameType, maxPlayers } = req.body
+    let {
+        gameType,
+        maxPlayers
+    } = req.body
     createARoom();
     createHash();
     if (gameType === 'deal52') {
@@ -63,14 +68,20 @@ router.post('/room', ensureAuthenticated, function (req, res) {
         gameType = 'camGame';
     }
     // if the room name is associated with a session ID, fetch that
-    Lobby.findOne({ roomNumber: room }, 'players sessionId', (err, lobby) => {
+    Lobby.findOne({
+        roomNumber: room
+    }, 'players sessionId', (err, lobby) => {
         if (err) return next(err);
         if (!lobby) {
             // if this is the first time the room is being accessed, create a new session ID
-            opentok.createSession({ mediaMode: 'routed' }, function (err, session) {
+            opentok.createSession({
+                mediaMode: 'routed'
+            }, function (err, session) {
                 if (err) {
                     console.log(err);
-                    res.status(500).send({ error: 'createSession error:' + err });
+                    res.status(500).send({
+                        error: 'createSession error:' + err
+                    });
                     return;
                 }
                 req.user.identifier = {
@@ -189,7 +200,9 @@ router.post('/sockets', (req, res, next) => {
     let room = req.body.room;
     let player;
     let maxPlayer;
-    Lobby.findOne({ roomKey: room }, (err, lobby) => {
+    Lobby.findOne({
+        roomKey: room
+    }, (err, lobby) => {
         if (err) return next(err);
         if (lobby) {
             //find user id in lobby then match and send user info to client for the socket
@@ -210,11 +223,17 @@ router.post('/sockets', (req, res, next) => {
 
 //Use roomKey to Join a room. Room key is given to the user when they hit the start button
 router.post('/join', ensureAuthenticated, (req, res) => {
-    let { roomKey } = req.body;
-    Lobby.findOne({ roomKey: roomKey }, (err, lobby) => {
+    let {
+        roomKey
+    } = req.body;
+    Lobby.findOne({
+        roomKey: roomKey
+    }, (err, lobby) => {
         if (err) return next(err);
         if (!lobby) {
-            res.json({ messages: 'That lobby does not exist!' });
+            res.json({
+                messages: 'That lobby does not exist!'
+            });
         } else {
             if (lobby.maxPlayer === lobby.ids.length) {
                 return res.json({
@@ -257,8 +276,12 @@ router.post('/join', ensureAuthenticated, (req, res) => {
 
 //Use room (roomKey) to delete the user who disconnected from the lobby, and then resave the lobby in the database.
 router.post('/delete', ensureAuthenticated, (req, res) => {
-    let { room } = req.body;
-    Lobby.findOne({ roomKey: room }, (err, lobby) => {
+    let {
+        room
+    } = req.body;
+    Lobby.findOne({
+        roomKey: room
+    }, (err, lobby) => {
         if (err) return next(err);
         if (lobby) {
             //removes the person from the lobby and then checks to see if that was the last person, and if it was deletes the lobby from the DB.
@@ -271,7 +294,9 @@ router.post('/delete', ensureAuthenticated, (req, res) => {
                 if (err) return err.message;
             });
             if (lobby.ids.length === 0) {
-                lobby.remove({ roomKey: room }, (err) => {
+                lobby.remove({
+                    roomKey: room
+                }, (err) => {
                     if (err) return err.message;
                 });
             }
