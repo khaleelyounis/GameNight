@@ -1,5 +1,5 @@
 import 'materialize-css/dist/css/materialize.min.css';
-import '../assets/css/noMobileSupportModal.css';
+// import '../assets/css/noMobileSupportModal.css';
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Navbar from './navbar';
@@ -26,7 +26,7 @@ const App = () => {
                 <Route path='/lobby' component={authUser(LobbyPage)} />
                 <Route path='/register' component={redirectUser(SignUp, '/login')} />
                 <Route path='/login' component={redirectUser(LoginPage, '/lobby')} />
-                <div className='noMobileSupportModal screenTooSmall'>
+                {/* <div className='noMobileSupportModal screenTooSmall'>
                     <div className='noMobileSupportModalContent'>
                         <p className='rotateTablet'>Please rotate your tablet to landscape mode.</p>
                         <div className='noMobSupport'>
@@ -34,7 +34,7 @@ const App = () => {
                             <p>Please visit our website on a desktop, laptop or tablet.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
