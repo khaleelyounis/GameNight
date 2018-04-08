@@ -6,12 +6,6 @@ Connect with your friends and family and enjoy some time with each other.
 
 To start playing simply navigate to our website @livefaceoff.com, and create an account with one our three methods (Google, Facebook, or our own login system). Once you have an account, you will be on our lobby page where you can see your user stats as well as the top 10 leaderboard. From there, you can choose to create a game where you will receive a room code that you can share, or join one with a code given to you. We currently have to game modes (Deal 52 and a web cam based game) with more in development. If you don't feel like showing your camera, you can use the built-in chat system. Please enjoy your time and happy gaming!
 
-![Landing Page](images/homepage.png) | ![Login Page](images/login.png)
-:-------------------------:|:-------------------------:
-
-![Sign Up Page](images/signup.png) | ![Lobby Page](images/lobby.png)
-:-------------------------:|:-------------------------:
-
 ## Technologies Used
 
 ### Frontend
