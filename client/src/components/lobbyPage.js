@@ -56,6 +56,8 @@ class LobbyPage extends Component {
     }
 
     //attached to the start button, sends info the server to create the lobby, then receives the key used for people to join with.
+
+    //need to add in a user input for the room name and send it to the backend
     handleSubmit(event) {
         const { lobbies, gameType, maxPlayers, room } = this.state;
         document.getElementById('startButton').disabled = true;
