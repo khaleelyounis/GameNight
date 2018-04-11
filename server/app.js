@@ -335,7 +335,7 @@ app.use((req, res, next) => {
 });
 
 //Port depending on where it is listening
-const port = process.env.PORT || 5000;
+const port = normalizePort(process.env.PORT || '8081');
 
 server.listen(port, () => {
     console.log('Server connected on ' + port);
