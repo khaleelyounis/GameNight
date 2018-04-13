@@ -57,7 +57,12 @@ body {
 
 /* Media Queries */
 
-
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+        .signInArea {
+            width: 100%;
+        }
+}
+    
 @media only screen and (min-height: 300px) and (max-height: 559px) {
     .loginContainer{
         height: 134vh;

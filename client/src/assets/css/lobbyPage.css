@@ -1,3 +1,9 @@
+
+#lobbyContainer{
+    height: 95vh;
+}
+
+
 .fullbox {
     background-color: ghostwhite;
 }
@@ -24,9 +30,9 @@
     padding-left: 0;
 }
 
-#joinCard{
+/* #joinCard{
     padding-right: 0;
-}
+} */
 
 #createCard{
     padding:0;

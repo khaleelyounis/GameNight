@@ -155,7 +155,7 @@ class LobbyPage extends Component {
             <div className='container' id="lobbyContainer" >
                 <DisplayMessages messages={messages} />
                 <div className='row topCards'>
-                    <div className='col s4 center-align' id="playerCard">
+                    <div className='col s12 l4 center-align' id="playerCard">
                         <div className="card contentBorder profileCard z-depth-5">
                             <div className="card-content">
                                 <div>
@@ -165,15 +165,16 @@ class LobbyPage extends Component {
                                     <h5 className="lobbyUsername"><span>{firstName} {lastName}</span></h5>
                                     <ul className='profileInfo'>
                                         <li>Team Name: {teamName}</li>
-                                        <li>Deal52 Games Played: {gamesPlayed || 0}</li>
-                                        <li>Deal 52 Lowest Score: {lowestScore || 0}</li>
-                                        <li>Deal 52 Wins: {totalWins || 0}</li>
+                                        <li>Games Played: {gamesPlayed || 0}</li>
+                                        {/* <li>Deal 52 Lowest Score: {lowestScore || 0}</li> */}
+                                        <li>Game Wins: {totalWins || 0}</li>
+                                        <li>Games Lost: 0</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col s4 center-align' id="createCard">
+                    <div className='col l4 s12 center-align' id="createCard">
                         <div className="card contentBorder z-depth-5 profileCard">
                             <div className="card-content">
                                 <div className="col s12">
@@ -208,7 +209,7 @@ class LobbyPage extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='col s4 center-align' id="joinCard">
+                    <div className='col l4 s12 center-align' id="joinCard">
                         <div className="card contentBorder z-depth-5 profileCard">
                             <div className="card-content">
                                 <div className="col s12">

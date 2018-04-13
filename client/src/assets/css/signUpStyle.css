@@ -28,47 +28,60 @@ div.container.signUpContainer {
 }
 
 /* Media Queries */
-
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+   
+    .fullform {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 @media only screen and (min-height: 300px) and (max-height: 559px) {
     .signUpContainer{
         height: 144vh;
     }
+  
 }
 
 @media only screen and (min-height: 560px) and (max-height: 649px) {
     .signUpContainer{
         height: 114vh;
     }
+   
 }
 
 @media only screen and (min-height: 650px) and (max-height: 788px) {
     .signUpContainer{
         height: 90.9vh;
     }
+   
 } 
 
 @media only screen and (min-height: 768px) and (max-height: 847px) {
     .signUpContainer{
         height: 92vh;
     }
+   
 }
 
 @media only screen and (min-height: 848px) and (max-height: 909px) {
     .signUpContainer{
         height: 92.7vh;
     }
+   
 }
 
 @media only screen and (min-height: 910px) {
     .signUpContainer{
         height: 93.1vh;
     }
+   
 }
 
 @media only screen and (min-height: 950px) {
     .signUpContainer{
         height: 93.3vh;
     }
+   
 }
 
 

@@ -43,8 +43,8 @@ class SignUp extends Component {
         return (
             <div className="container signUpContainer">
                 <DisplayMessages messages={messages} />
-                <div className="col s6 l6 fullform contentBorder z-depth-5">
-                    <div className="row s6">
+                <div className="col s12 l6 fullform contentBorder z-depth-5">
+                    <div className="row s12 l6">
                         <form className="col s10 center-align push-s1" onSubmit={handleSubmit(handleSubmitForm)}>
                             <div className='col s12'>
                                 <h4 className="signUpText">Sign Up</h4>
